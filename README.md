@@ -1,5 +1,7 @@
 # Меня нет МАКСЕ · Официальное заявление
 
+Сайт: [https://sashamaencraft.github.io/Chernovik/](https://sashamaencraft.github.io/I-m-not-here-MAX/)
+
 **Сайт-предупреждение** о полном отсутствии организации Visual Vertex / DragonCorp в мессенджере **MAX**.  
 Содержит правовую позицию, список фейковых каналов, официальные ссылки и юридическое обоснование.
 
