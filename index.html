@@ -1,0 +1,1770 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меня нет МАКСЕ · Официальное заявление</title>
+    <!-- Подключаем шрифт Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Favicon (простая иконка) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffb347'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z'/%3E%3C/svg%3E">
+    <style>
+        /* Все старые стили сохранены полностью */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #0b0d10;
+            color: #e8edf2;
+            line-height: 1.5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 2rem 1.5rem;
+            position: relative;
+        }
+
+        /* Кнопка "Поддержать автора" в правом верхнем углу */
+        .support-button-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .support-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #ffb347, #ff7e5f);
+            color: #0b0d10;
+            font-weight: 700;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 8px 20px rgba(255, 125, 75, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.2s ease;
+            font-size: 1rem;
+            backdrop-filter: blur(2px);
+        }
+
+        .support-button i {
+            font-size: 1.2rem;
+            color: #0b0d10;
+        }
+
+        .support-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px rgba(255, 125, 75, 0.5);
+            background: linear-gradient(135deg, #ffc064, #ff8f70);
+        }
+
+        .container {
+            max-width: 780px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #14181d;
+            border-radius: 32px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            padding: 2.5rem 2.2rem;
+            transition: all 0.2s ease;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #2a313a;
+            flex-wrap: wrap;
+        }
+
+        .header-icon {
+            font-size: 2.2rem;
+            background: #1f272f;
+            width: 58px;
+            height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            box-shadow: none;
+            color: #ffb347;
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        .header-text h1 {
+            font-weight: 700;
+            font-size: 2.2rem;
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, #ffffff 0%, #c0ccd9 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .header-text .badge {
+            background: #232b33;
+            display: inline-block;
+            border-radius: 40px;
+            padding: 0.25rem 1rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #a0b3c9;
+            border: 1px solid #31465c;
+            margin-top: 6px;
+        }
+
+        .max-logo {
+            background: linear-gradient(145deg, #1e2937, #0f1720);
+            border: 1px solid #3e556b;
+            border-radius: 48px;
+            padding: 0.4rem 1.2rem 0.4rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: none;
+        }
+
+        .max-logo .max-text {
+            font-weight: 800;
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+            background: linear-gradient(135deg, #ffb347, #ff7e5f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .max-logo .max-sub {
+            font-size: 0.7rem;
+            color: #a5bfdd;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+            border-left: 1px solid #3e556b;
+            padding-left: 8px;
+        }
+
+        h2 {
+            font-weight: 600;
+            font-size: 1.6rem;
+            margin: 2rem 0 1.2rem 0;
+            letter-spacing: -0.01em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #ffffff;
+        }
+
+        h2 i {
+            color: #f59f3c;
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            font-weight: 600;
+            font-size: 1.25rem;
+            margin: 1.5rem 0 0.8rem 0;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .alert-box {
+            background: #1e1a1c;
+            border-left: 6px solid #f97316;
+            padding: 1.5rem 1.5rem 1rem 1.5rem;
+            border-radius: 24px;
+            margin: 2rem 0 1.5rem 0;
+            box-shadow: none;
+        }
+
+        .alert-box p {
+            margin-bottom: 0.8rem;
+        }
+
+        .warning-title {
+            color: #f9a15c;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .warning-title i {
+            font-size: 1.2rem;
+        }
+
+        .channels-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 14px;
+            margin: 1.5rem 0 1rem 0;
+        }
+
+        .channel-item {
+            background: #1d252d;
+            padding: 1rem 0.8rem;
+            border-radius: 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 8px;
+            border: 1px solid #2e3b48;
+            transition: all 0.15s;
+            box-shadow: none;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .channel-item:hover {
+            transform: translateY(-2px);
+            border-color: #4e6379;
+        }
+
+        .channel-item i {
+            font-size: 2rem;
+        }
+
+        .channel-item span {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .channel-item small {
+            font-size: 0.75rem;
+            color: #9aaebf;
+        }
+
+        .tg { color: #2e96d8; }
+        .vk { color: #4c75a3; }
+        .dc { color: #5865f2; }
+
+        .bots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 14px;
+            margin: 1.5rem 0 1rem 0;
+        }
+
+        .bot-item {
+            background: #1a2532;
+            padding: 1.2rem 1rem;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border: 1px solid #3a4e68;
+            transition: all 0.15s;
+            box-shadow: none;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .bot-item:hover {
+            transform: translateY(-2px);
+            border-color: #5f7a9c;
+            background: #1f2d3e;
+        }
+
+        .bot-icon {
+            font-size: 2.2rem;
+            color: #2e96d8;
+            background: #0f1a24;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+        }
+
+        .bot-info h4 {
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 4px;
+            color: white;
+        }
+
+        .bot-info p {
+            font-size: 0.75rem;
+            color: #9bb5d4;
+        }
+
+        .links-block {
+            background: #10161b;
+            border-radius: 24px;
+            padding: 1.8rem 1.8rem 1.5rem 1.8rem;
+            margin: 2.5rem 0 1rem 0;
+            border: 1px solid #28323c;
+        }
+
+        .links-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: #d5dfe9;
+        }
+
+        .button-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #202a33;
+            padding: 0.8rem 1.3rem;
+            border-radius: 40px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: #e0e8f0;
+            text-decoration: none;
+            border: 1px solid #354654;
+            transition: 0.15s;
+            box-shadow: none;
+            cursor: pointer;
+        }
+
+        .button i {
+            font-size: 1.1rem;
+        }
+
+        .button:hover {
+            background: #2e3c4b;
+            border-color: #4e6379;
+            transform: scale(1.02);
+            color: white;
+        }
+
+        .button.primary-website {
+            background: #1e2a41;
+            border-color: #3c4f78;
+        }
+
+        .button.bot-button {
+            background: #1a332a;
+            border-color: #2e6b4f;
+        }
+
+        .button.bot-button:hover {
+            background: #234d3b;
+        }
+
+        .button.more-button {
+            background: #4a2f3a;
+            border-color: #b35f7a;
+        }
+
+        .button.more-button:hover {
+            background: #6d4052;
+        }
+
+        .button.policy-button {
+            background: #1e3a5f;
+            border-color: #4a7db5;
+            font-weight: 600;
+            margin-top: 1rem;
+            width: 100%;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        /* Новая кнопка для правообладателя */
+        .button.copyright-button {
+            background: #7c2a2a;
+            border-color: #c06060;
+            font-weight: 600;
+            margin-top: 1rem;
+            width: 100%;
+            justify-content: center;
+            padding: 1rem;
+        }
+        
+        .button.copyright-button:hover {
+            background: #9f3a3a;
+            border-color: #e08080;
+        }
+
+        .steps {
+            list-style: none;
+            margin: 1.2rem 0;
+        }
+
+        .steps li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            background: #1b2229;
+            padding: 0.8rem 1.2rem;
+            border-radius: 40px;
+            border: 1px solid #2e3945;
+        }
+
+        .steps li i {
+            color: #f9a15c;
+            width: 20px;
+            margin-top: 3px;
+        }
+
+        .new-points {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 1.5rem 0;
+        }
+
+        .point-card {
+            background: #1b2530;
+            border-radius: 20px;
+            padding: 1.3rem 1.2rem;
+            border: 1px solid #314d6b;
+            box-shadow: none;
+        }
+
+        .point-card i {
+            font-size: 1.6rem;
+            color: #f9a15c;
+            margin-bottom: 10px;
+        }
+
+        .point-card h4 {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: white;
+        }
+
+        .point-card p {
+            font-size: 0.9rem;
+            color: #b0c4de;
+        }
+
+        .max-warning-points {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 1.5rem 0;
+        }
+
+        .max-warning-card {
+            background: #2d1f2a;
+            border-radius: 20px;
+            padding: 1.3rem 1.2rem;
+            border: 1px solid #a13a3a;
+            box-shadow: none;
+            border-left: 4px solid #f97316;
+        }
+
+        .max-warning-card i {
+            font-size: 1.6rem;
+            color: #ff7e5f;
+            margin-bottom: 10px;
+        }
+
+        .max-warning-card h4 {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #ffb347;
+        }
+
+        .max-warning-card p {
+            font-size: 0.9rem;
+            color: #e0c8b0;
+        }
+
+        .footer-info {
+            font-size: 0.9rem;
+            color: #a5b9ce;
+            background: #0f1419;
+            border-radius: 20px;
+            padding: 1.2rem 1.8rem;
+            margin: 2.2rem 0 1rem 0;
+            border: 1px solid #29323c;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background: #2a343f;
+            margin: 1.8rem 0;
+        }
+
+        /* Стили для модальных окон */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(3px);
+        }
+
+        .modal-content {
+            background: #1a2632;
+            border-radius: 32px;
+            padding: 2rem;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            border: 1px solid #4f6b8f;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #3e556b;
+            position: sticky;
+            top: 0;
+            background: #1a2632;
+            z-index: 10;
+        }
+
+        .modal-header h3 {
+            margin: 0;
+            color: #ffb347;
+        }
+
+        .close-modal {
+            font-size: 2rem;
+            cursor: pointer;
+            color: #9aaebf;
+            transition: 0.2s;
+        }
+
+        .close-modal:hover {
+            color: white;
+        }
+
+        .modal-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .modal-link-item {
+            background: #1d2a38;
+            border-radius: 20px;
+            padding: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border: 1px solid #3e5a7a;
+            text-decoration: none;
+            color: inherit;
+            transition: 0.2s;
+        }
+
+        .modal-link-item:hover {
+            background: #26384b;
+            transform: translateX(5px);
+            border-color: #ffb347;
+        }
+
+        .modal-link-icon {
+            font-size: 2.2rem;
+            color: #ffb347;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .modal-link-text h4 {
+            font-weight: 600;
+            margin-bottom: 4px;
+            color: white;
+        }
+
+        .modal-link-text p {
+            font-size: 0.8rem;
+            color: #b0c8e0;
+        }
+
+        /* Стили для юридического модального окна */
+        .legal-section {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #314d6b;
+        }
+
+        .legal-section:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .legal-section h4 {
+            color: #ffb347;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .legal-section p {
+            color: #c0d4ec;
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+        }
+
+        .legal-section ul {
+            margin-left: 1.5rem;
+            color: #b0c8e0;
+        }
+
+        .legal-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .legal-section strong {
+            color: #ff9f4b;
+        }
+
+        .legal-badge {
+            background: #2a3a4a;
+            border-radius: 30px;
+            padding: 0.3rem 1rem;
+            display: inline-block;
+            font-size: 0.8rem;
+            color: #aaccff;
+            border: 1px solid #4f7ab3;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .legal-footer-note {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #8da0b5;
+            text-align: center;
+            border-top: 1px solid #314d6b;
+            padding-top: 1rem;
+        }
+
+        .legal-link {
+            color: #ffb347;
+            text-decoration: none;
+            border-bottom: 1px dotted #ffb347;
+            transition: 0.2s;
+        }
+
+        .legal-link:hover {
+            color: #ffd700;
+            border-bottom: 1px solid #ffd700;
+        }
+
+        /* Стили для расписания работы */
+        .schedule-table {
+            background: #1d2a38;
+            border-radius: 16px;
+            padding: 1rem;
+            margin: 1rem 0;
+            border: 1px solid #3e5a7a;
+        }
+        .schedule-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #2e3b48;
+        }
+        .schedule-row:last-child {
+            border-bottom: none;
+        }
+        .schedule-day {
+            font-weight: 600;
+            color: #ffb347;
+        }
+        .schedule-time {
+            color: #b0c4de;
+        }
+        .schedule-closed {
+            color: #f97316;
+            font-weight: 500;
+        }
+
+        /* ===== НОВЫЕ СТИЛИ (Добавлено) ===== */
+        
+        /* Стили для FAQ */
+        .faq-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 1.5rem 0;
+        }
+        .faq-item {
+            background: #1d252d;
+            border-radius: 18px;
+            padding: 0;
+            border: 1px solid #2e3b48;
+            transition: 0.2s;
+        }
+        .faq-question {
+            padding: 1.2rem 1.5rem;
+            font-weight: 600;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+        }
+        .faq-question i {
+            transition: transform 0.3s ease;
+            color: #ffb347;
+        }
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            background: #161e26;
+            border-radius: 0 0 18px 18px;
+            border-top: 0px solid transparent;
+            color: #b0c4de;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            padding: 0 1.5rem 1.2rem 1.5rem;
+            border-top: 1px solid #2e3b48;
+        }
+
+        /* Стили для блока "История нарушений" */
+        .exposure-list {
+            background: #1a1f26;
+            border-radius: 24px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border: 1px solid #4a3a3a;
+            overflow-x: auto;
+        }
+        .exposure-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 1rem;
+            border-bottom: 1px solid #2e3b48;
+            flex-wrap: wrap;
+        }
+        .exposure-item:last-child {
+            border-bottom: none;
+        }
+        .exposure-item i {
+            color: #f97316;
+            font-size: 1.5rem;
+            min-width: 30px;
+        }
+        .exposure-content {
+            flex: 1;
+            min-width: 150px;
+        }
+        .exposure-title {
+            font-weight: 600;
+            color: white;
+            margin-bottom: 4px;
+        }
+        .exposure-desc {
+            font-size: 0.85rem;
+            color: #a0b3c9;
+        }
+        .exposure-link {
+            color: #ff7e5f;
+            text-decoration: none;
+            font-family: monospace;
+            background: #2d1f1f;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            border: 1px solid #a13a3a;
+            white-space: nowrap;
+            word-break: break-all;
+            max-width: 100%;
+            overflow-x: auto;
+            display: inline-block;
+        }
+
+        /* Стили для кнопки "Сообщить о фейке" */
+        .report-button-container {
+            margin: 1.5rem 0;
+        }
+        .report-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #7c3a3a, #b13e3e);
+            color: white;
+            font-weight: 600;
+            padding: 1.2rem;
+            border-radius: 40px;
+            text-decoration: none;
+            border: 1px solid #d45c5c;
+            transition: 0.2s;
+            width: 100%;
+        }
+        .report-button:hover {
+            background: linear-gradient(135deg, #8f4545, #c74a4a);
+            transform: translateY(-2px);
+        }
+
+        /* Подвал */
+        .site-footer {
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #2a343f;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            color: #8da0b5;
+            font-size: 0.85rem;
+        }
+        .footer-contacts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .footer-contacts a {
+            color: #ffb347;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .footer-contacts a:hover {
+            color: #ffd700;
+        }
+
+        /* Мобильные фиксы */
+        @media (max-width: 500px) {
+            .card { 
+                padding: 1.5rem 1rem;
+            }
+            .header-text h1 { 
+                font-size: 1.6rem;
+            }
+            .button-links { 
+                flex-direction: column; 
+                align-items: stretch; 
+            }
+            .button { 
+                justify-content: center; 
+                width: 100%;
+            }
+            .new-points, .max-warning-points { 
+                grid-template-columns: 1fr; 
+                gap: 12px;
+            }
+            .bots-grid { 
+                grid-template-columns: 1fr; 
+            }
+            .modal-content { 
+                padding: 1.2rem; 
+                width: 95%;
+            }
+            .support-button-container {
+                top: 10px;
+                right: 10px;
+            }
+            .support-button {
+                padding: 8px 16px;
+                font-size: 0.85rem;
+            }
+            
+            .max-warning-card {
+                padding: 1rem;
+                width: 100%;
+            }
+            
+            .exposure-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .exposure-item i {
+                margin-bottom: 0;
+            }
+            .exposure-link {
+                width: 100%;
+                text-align: center;
+                white-space: normal;
+                word-break: break-all;
+            }
+            
+            .site-footer {
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer-contacts {
+                justify-content: center;
+            }
+            
+            .faq-question {
+                padding: 1rem;
+                font-size: 0.95rem;
+            }
+
+            .schedule-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .max-logo {
+                align-self: flex-start;
+            }
+            .header-text h1 {
+                font-size: 1.4rem;
+            }
+        }
+
+        /* НОВЫЕ МИКРО-СТИЛИ (только нужное) */
+        .last-updated {
+            text-align: right;
+            font-size: 0.7rem;
+            color: #4b5a6b;
+            margin-top: 5px;
+        }
+        
+        .rkn-link {
+            margin-top: 10px;
+            font-size: 0.85rem;
+        }
+        
+        .rkn-link a {
+            color: #7aaae0;
+            text-decoration: none;
+        }
+        
+        .rkn-link a:hover {
+            color: #ffb347;
+        }
+
+        /* ===== УЛУЧШЕННАЯ ГАЛОЧКА С КОМПАКТНЫМ ТЕКСТОМ ===== */
+        .verification-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 6px;
+            position: relative;
+            cursor: help;
+            flex-shrink: 0;
+        }
+        
+        .verification-badge i {
+            font-size: 1.2rem;
+            color: #3b82f6;
+            filter: drop-shadow(0 0 2px rgba(59, 130, 246, 0.5));
+            background: rgba(59, 130, 246, 0.1);
+            border-radius: 50%;
+            transition: all 0.2s ease;
+        }
+        
+        .verification-badge:hover i {
+            color: #60a5fa;
+            filter: drop-shadow(0 0 4px #3b82f6);
+            transform: scale(1.1);
+            background: rgba(96, 165, 250, 0.2);
+        }
+        
+        /* Компактный тултип с уменьшенным текстом */
+        .verification-badge .tooltip-text {
+            visibility: hidden;
+            opacity: 0;
+            width: 210px;
+            background: #1e2f3f;
+            color: #ecf3fa;
+            text-align: center;
+            border-radius: 20px;
+            padding: 6px 12px;
+            position: absolute;
+            z-index: 100;
+            bottom: 160%;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: opacity 0.2s ease, visibility 0.2s ease, bottom 0.2s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+            border: 1px solid #4f7ab3;
+            font-size: 0.7rem;
+            font-weight: 400;
+            letter-spacing: 0.2px;
+            pointer-events: none;
+            white-space: normal;
+            line-height: 1.3;
+            backdrop-filter: blur(4px);
+            word-break: keep-all;
+        }
+        
+        .verification-badge .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #1e2f3f transparent transparent transparent;
+            filter: drop-shadow(0 1px 0 #4f7ab3);
+        }
+        
+        .verification-badge:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+            bottom: 170%;
+        }
+
+        @media (max-width: 480px) {
+            .verification-badge .tooltip-text {
+                width: 180px;
+                font-size: 0.65rem;
+                padding: 5px 10px;
+                bottom: 150%;
+            }
+            .verification-badge:hover .tooltip-text {
+                bottom: 160%;
+            }
+        }
+
+        /* ===== НОВЫЕ СТИЛИ ДЛЯ ПРАВОВОЙ КНОПКИ (ДОБАВЛЕНО) ===== */
+        .legal-float-button {
+            position: fixed;
+            right: 20px;
+            bottom: 80px;
+            z-index: 1000;
+            background: linear-gradient(135deg, #1e3a5f, #0f2b44);
+            border-radius: 60px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            border: 1px solid #4f8bc9;
+            transition: all 0.25s ease;
+            backdrop-filter: blur(4px);
+        }
+        .legal-float-button a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 24px;
+            text-decoration: none;
+            color: #ffde9e;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 0.3px;
+        }
+        .legal-float-button i {
+            font-size: 1.5rem;
+            color: #ffb347;
+        }
+        .legal-float-button:hover {
+            transform: translateY(-4px);
+            background: linear-gradient(135deg, #2a4c78, #143a5c);
+            border-color: #ffb347;
+            box-shadow: 0 12px 28px rgba(0,0,0,0.6);
+        }
+        @media (max-width: 550px) {
+            .legal-float-button {
+                bottom: 20px;
+                right: 15px;
+            }
+            .legal-float-button a {
+                padding: 10px 18px;
+                gap: 8px;
+                font-size: 0.85rem;
+            }
+            .legal-float-button i {
+                font-size: 1.3rem;
+            }
+        }
+        @media (min-width: 1200px) {
+            .legal-float-button {
+                right: 30px;
+                bottom: 100px;
+            }
+        }
+
+        .legal-modal {
+            display: none;
+            position: fixed;
+            z-index: 1100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.92);
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(5px);
+        }
+        .legal-modal-content {
+            background: #131b24;
+            border-radius: 36px;
+            padding: 1.8rem;
+            max-width: 700px;
+            width: 90%;
+            max-height: 85vh;
+            overflow-y: auto;
+            border: 1px solid #5f7ea0;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+            animation: fadeInUp 0.25s ease;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .legal-modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #ffb347;
+            padding-bottom: 0.8rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .legal-modal-header h3 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #ffd966, #ffb347);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .close-legal-modal {
+            font-size: 2rem;
+            cursor: pointer;
+            color: #b0c4de;
+            transition: 0.2s;
+        }
+        .close-legal-modal:hover {
+            color: #ffb347;
+            transform: scale(1.1);
+        }
+        .legal-doc-section {
+            margin-bottom: 2rem;
+            background: #0f171f;
+            border-radius: 24px;
+            padding: 1.2rem 1.5rem;
+            border-left: 5px solid #ffb347;
+        }
+        .legal-doc-section h4 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #ffcd85;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .legal-doc-section p {
+            color: #cfdfef;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            line-height: 1.45;
+        }
+        .law-link-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 12px;
+        }
+        .law-link-card {
+            background: #1e2b38;
+            border-radius: 40px;
+            padding: 8px 18px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #e0edff;
+            font-weight: 500;
+            font-size: 0.85rem;
+            border: 1px solid #416e8f;
+            transition: 0.2s;
+        }
+        .law-link-card i {
+            color: #ffb347;
+            font-size: 1rem;
+        }
+        .law-link-card:hover {
+            background: #2f4a62;
+            border-color: #ffb347;
+            transform: translateY(-2px);
+            color: white;
+        }
+        .legal-note {
+            background: #03101a;
+            border-radius: 20px;
+            padding: 1rem;
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            border: 1px solid #3e607a;
+            color: #bfd6f0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="support-button-container">
+        <a href="https://donatik1.netlify.app/" target="_blank" class="support-button">
+            <i class="fas fa-heart"></i> Поддержать автора
+        </a>
+    </div>
+
+    <div class="legal-float-button" id="legalFloatBtn">
+        <a href="javascript:void(0);">
+            <i class="fas fa-gavel"></i>
+            <span>⚖️ Правовая основа</span>
+            <i class="fas fa-chevron-circle-right"></i>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <div class="header-icon">
+                    <i class="fas fa-user-secret"></i>
+                </div>
+                <div class="header-text">
+                    <h1>Меня нет МАКСЕ</h1>
+                    <span class="badge"><i class="far fa-eye-slash" style="margin-right: 4px;"></i> ㊙ ⸸קąﾓﾓ๏รッ ⸸👑</span>
+                </div>
+                <div class="max-logo">
+                    <span class="max-text">MAX</span>
+                    <span class="max-sub">российский<br>мессенджер</span>
+                </div>
+            </div>
+            
+            <div class="last-updated">
+                <i class="far fa-calendar-alt"></i> Актуально на 24.02.2026
+            </div>
+
+            <h2>
+                <i class="fas fa-gavel"></i> Официальное заявление
+            </h2>
+
+            <h3><i class="fas fa-ban" style="color: #f44242;"></i> Уведомление о статусе присутствия в приложении MAX</h3>
+            <p style="margin-bottom: 1.5rem;">Настоящим информируем, что наша организация <strong>никогда не имела и не имеет</strong> в настоящее время каких-либо аккаунтов, групп или сообществ в приложении MAX.</p>
+
+            <h3><i class="fas fa-exclamation-circle" style="color: #ff7e5f;"></i> Подтверждение отсутствия в MAX</h3>
+            
+            <div class="max-warning-points">
+                <div class="max-warning-card">
+                    <i class="fas fa-user-slash"></i>
+                    <h4>Нет аккаунтов в MAX</h4>
+                    <p>Мы официально заявляем: у нашей организации <strong>нет и никогда не было</strong> ни одного аккаунта в мессенджере MAX. Любые найденные профили — фейковые.</p>
+                </div>
+                <div class="max-warning-card">
+                    <i class="fas fa-users-slash"></i>
+                    <h4>Нет групп и каналов</h4>
+                    <p>В мессенджере MAX <strong>отсутствуют</strong> какие-либо официальные группы, каналы или чаты, принадлежащие нашей организации.</p>
+                </div>
+                <div class="max-warning-card">
+                    <i class="fas fa-bot"></i>
+                    <h4>Нет ботов в MAX</h4>
+                    <p>Мы <strong>не создавали</strong> и не поддерживаем никаких ботов в платформе MAX. Все боты от нашего имени там — мошеннические.</p>
+                </div>
+                <div class="max-warning-card">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Не ведитесь на обман</h4>
+                    <p>Если вам пишут в MAX от имени нашей организации — это 100% мошенники. Не отвечайте, не переходите по ссылкам.</p>
+                </div>
+            </div>
+
+            <h3><i class="fas fa-skull" style="color: #f97316;"></i> История нарушений (фейковые каналы в MAX)</h3>
+            <div class="exposure-list">
+                <div class="exposure-item">
+                    <i class="fas fa-flag"></i>
+                    <div class="exposure-content">
+                        <div class="exposure-title">Фейковый канал "Visual Vertex MAX"</div>
+                        <div class="exposure-desc">Обнаружен 15.02.2026, копирует контент</div>
+                    </div>
+                    <span class="exposure-link">@visualvertex_max</span>
+                </div>
+                <div class="exposure-item">
+                    <i class="fas fa-flag"></i>
+                    <div class="exposure-content">
+                        <div class="exposure-title">Мошеннический бот "HeadSupport MAX"</div>
+                        <div class="exposure-desc">Собирает данные пользователей</div>
+                    </div>
+                    <span class="exposure-link">@HeadSupportMAX_bot</span>
+                </div>
+                <div class="exposure-item">
+                    <i class="fas fa-flag"></i>
+                    <div class="exposure-content">
+                        <div class="exposure-title">Группа "DragonCorp в MAX"</div>
+                        <div class="exposure-desc">Фейковое сообщество, просит донаты</div>
+                    </div>
+                    <span class="exposure-link">t.me/joinchat/XXXfakedragon</span>
+                </div>
+            </div>
+
+            <div class="report-button-container">
+                <a href="https://t.me/HeadSupportbot" target="_blank" class="report-button">
+                    <i class="fas fa-exclamation-triangle"></i> Сообщить о фейке в MAX
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <h3><i class="fas fa-check-circle" style="color: #4bb543;"></i> Официальные каналы коммуникации</h3>
+            <p>Единственными легитимными платформами для взаимодействия с нашей организацией являются:</p>
+
+            <div class="channels-grid">
+                <a href="https://t.me/VisualVertex" target="_blank" class="channel-item">
+                    <i class="fab fa-telegram-plane tg"></i>
+                    <span>Telegram</span>
+                    <small>офиц. каналы и группы</small>
+                </a>
+                <a href="https://vk.com/visualvertex" target="_blank" class="channel-item">
+                    <i class="fab fa-vk vk"></i>
+                    <span>ВКонтакте</span>
+                    <small>верифицированные</small>
+                </a>
+                <a href="https://discord.gg/QkNVfxvq" target="_blank" class="channel-item">
+                    <i class="fab fa-discord dc"></i>
+                    <span>Discord</span>
+                    <small>офиц. серверы</small>
+                </a>
+            </div>
+
+            <h3><i class="fas fa-robot" style="color: #2e96d8;"></i> Техническая поддержка (официальные боты)</h3>
+            <p>Для оперативной помощи используйте наших официальных Telegram-ботов:</p>
+
+            <div class="bots-grid">
+                <a href="https://t.me/VisualVertexbot" target="_blank" class="bot-item">
+                    <div class="bot-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="bot-info">
+                        <h4>@VisualVertexbot</h4>
+                        <p>Бот поддержки канала • 24/7</p>
+                    </div>
+                </a>
+                <a href="https://t.me/HeadSupportbot" target="_blank" class="bot-item">
+                    <div class="bot-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="bot-info">
+                        <h4>@HeadSupportbot</h4>
+                        <p>Связь с владельцем • админ</p>
+                    </div>
+                </a>
+            </div>
+
+            <h3><i class="fas fa-plus-circle" style="color: #4bb543;"></i> Дополнительные официальные разъяснения</h3>
+            
+            <div class="new-points">
+                <div class="point-card">
+                    <i class="fas fa-shield-halved"></i>
+                    <h4>Политика конфиденциальности</h4>
+                    <p>Мы никогда не запрашиваем личные данные, пароли или финансовую информацию через личные сообщения. Остерегайтесь фишинга.</p>
+                </div>
+                <div class="point-card">
+                    <i class="fas fa-clock"></i>
+                    <h4>Режим работы поддержки</h4>
+                    <p>Официальная поддержка доступна ежедневно с 10:00 до 22:00 по МСК только в проверенных каналах.</p>
+                </div>
+                <div class="point-card">
+                    <i class="fas fa-copyright"></i>
+                    <h4>Авторские права</h4>
+                    <p>Любое использование названия, логотипов и материалов без согласия правообладателя преследуется по закону.</p>
+                </div>
+                <div class="point-card">
+                    <i class="fas fa-bell"></i>
+                    <h4>Оповещения о взломах</h4>
+                    <p>В случае компрометации аккаунтов мы оповещаем только через официальный Telegram-канал. Не верьте слухам.</p>
+                </div>
+            </div>
+
+            <h3><i class="fas fa-question-circle" style="color: #ffb347;"></i> Часто задаваемые вопросы</h3>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Почему меня нет в MAX?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Мы принципиально не используем данный мессенджер из-за отсутствия верификации и высокого риска мошенничества.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Как отличить фейк от настоящего?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Все настоящие каналы перечислены на этом сайте. Если ссылка не совпадает — это фейк.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Мне пишут из "вашей поддержки" в MAX. Что делать?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Это мошенники. Заблокируйте и сообщите нам через бота @HeadSupportbot.
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert-box">
+                <div class="warning-title">
+                    <i class="fas fa-exclamation-triangle"></i> ⚠️ ВАЖНОЕ ПРЕДУПРЕЖДЕНИЕ
+                </div>
+                <p>Любые профили, группы или каналы, заявляющие о принадлежности к нашей организации в <strong>MAX</strong>:</p>
+                <ul style="margin-left: 1.2rem; list-style-type: disc; color: #d4e0f0;">
+                    <li><span style="color: #ff8a5c;">Являются фейковыми</span></li>
+                    <li>Не имеют к нам никакого отношения</li>
+                    <li>Могут представлять угрозу безопасности</li>
+                </ul>
+            </div>
+
+            <h3><i class="fas fa-clipboard-list"></i> Порядок действий при обнаружении нарушений</h3>
+            <p>При выявлении подозрительных аккаунтов рекомендуется:</p>
+            <ul class="steps">
+                <li><i class="fas fa-camera"></i> Зафиксировать доказательства (скриншоты, сообщения)</li>
+                <li><i class="fas fa-flag"></i> Сообщить в службу поддержки платформы</li>
+                <li><i class="fas fa-gavel"></i> При наличии признаков мошенничества — обратиться в правоохранительные органы</li>
+                <li><i class="fas fa-users"></i> Предупредить других пользователей о возможной угрозе</li>
+            </ul>
+
+            <h3><i class="fas fa-scale-balanced"></i> Ответственность</h3>
+            <p>Использование названия нашей организации в мошеннических целях является уголовно наказуемым деянием. Виновные лица будут привлечены к ответственности в соответствии с законодательством РФ.</p>
+            
+            <div class="rkn-link">
+                <i class="fas fa-external-link-alt"></i> 
+                <a href="https://rkn.gov.ru/" target="_blank">Пожаловаться в Роскомнадзор</a> на фейковые каналы
+            </div>
+
+            <div class="links-block">
+                <div class="links-title"><i class="fas fa-link"></i> Официальные источники / проверенные ссылки</div>
+                <div class="button-links">
+                    <a href="https://t.me/VisualVertex" target="_blank" class="button"><i class="fab fa-telegram-plane"></i> Telegram</a>
+                    <a href="https://vk.com/visualvertex" target="_blank" class="button"><i class="fab fa-vk"></i> ВКонтакте</a>
+                    <a href="https://discord.gg/QkNVfxvq" target="_blank" class="button"><i class="fab fa-discord"></i> Discord</a>
+                    <a href="https://t.me/VisualVertexbot" target="_blank" class="button bot-button"><i class="fas fa-robot"></i> Bot #1</a>
+                    <a href="https://t.me/HeadSupportbot" target="_blank" class="button bot-button"><i class="fas fa-crown"></i> Bot #2</a>
+                    <a href="https://1visualvertexrp.netlify.app/" target="_blank" class="button primary-website"><i class="fas fa-globe"></i> VisualVertexRP</a>
+                    <a href="https://website-dragoncorp0.netlify.app/" target="_blank" class="button"><i class="fas fa-dragon"></i> DragonCorp</a>
+                    <button id="moreButton" class="button more-button"><i class="fas fa-chevron-circle-down"></i> Подробнее</button>
+                </div>
+                <p style="margin-top: 1.2rem; font-size: 0.85rem; color: #8da0b5;"><i class="far fa-shield-check"></i> Только эти каналы и боты являются подлинными. Не доверяйте другим.</p>
+            </div>
+
+            <button id="copyrightButton" class="button copyright-button"><i class="fas fa-copyright"></i> Связаться с правообладателем</button>
+
+            <button id="policyButton" class="button policy-button"><i class="fas fa-shield-alt"></i> Политика конфиденциальности и правовая информация</button>
+
+            <div class="footer-info">
+                <i class="fas fa-circle-info" style="margin-right: 6px; color: #7aaae0;"></i>
+                Для получения достоверной информации используйте только официальные каналы связи. Не доверяйте сообщениям от неизвестных источников и не предоставляйте конфиденциальные данные без верификации.
+            </div>
+
+            <div class="site-footer">
+                <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 5px;">
+                    © 2026 Visual Vertex · Все права защищены
+                    <span class="verification-badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="tooltip-text">Верифицированная страница DragonCorp</span>
+                    </span>
+                </div>
+                <div class="footer-contacts">
+                    <a href="mailto:drakon.karol@yandex.ru"><i class="fas fa-envelope"></i> drakon.karol@yandex.ru</a>
+                    <a href="https://t.me/HeadSupportbot" target="_blank"><i class="fab fa-telegram"></i> Юрист</a>
+                </div>
+            </div>
+
+            <hr>
+            <div style="text-align: center; opacity: 0.5; font-size: 0.9rem; letter-spacing: 1px;">
+                ㊙ ⸸קąﾓﾓ๏รッ ⸸👑 · <i class="fas fa-skull"></i> · Меня нет МАКСЕ
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 1.2rem; font-size: 0.8rem; color: #4b5a6b;"><i class="far fa-copyright"></i> только официальная информация</p>
+    </div>
+
+    <!-- Модальное окно с дополнительными сайтами (удалён visualvertexrp-forum) -->
+    <div id="moreModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-info-circle" style="margin-right: 8px;"></i> Дополнительные ресурсы</h3>
+                <span class="close-modal" id="closeMoreModal">&times;</span>
+            </div>
+            <div class="modal-links">
+                <a href="https://visualvertex.forumes.ru/" target="_blank" class="modal-link-item">
+                    <div class="modal-link-icon"><i class="fas fa-users"></i></div>
+                    <div class="modal-link-text">
+                        <h4>VisualVertex форум</h4>
+                        <p>Альтернативный форум</p>
+                    </div>
+                </a>
+                <a href="https://applications-fortheadmin-panel1.netlify.app/" target="_blank" class="modal-link-item">
+                    <div class="modal-link-icon"><i class="fas fa-file-signature"></i></div>
+                    <div class="modal-link-text">
+                        <h4>Заявка на админку</h4>
+                        <p>Подача заявок в администрацию</p>
+                    </div>
+                </a>
+                <a href="https://ifous1.netlify.app/" target="_blank" class="modal-link-item">
+                    <div class="modal-link-icon"><i class="fas fa-star"></i></div>
+                    <div class="modal-link-text">
+                        <h4>Другое</h4>
+                        <p>Дополнительный информационный ресурс</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- МОДАЛЬНОЕ ОКНО: ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ -->
+    <div id="policyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-shield-alt" style="margin-right: 8px;"></i> Политика конфиденциальности</h3>
+                <span class="close-modal" id="closePolicyModal">&times;</span>
+            </div>
+            
+            <div class="legal-section">
+                <h4><i class="fas fa-balance-scale"></i> 1. Официальное заявление о статусе в MAX</h4>
+                <p>Настоящим подтверждаем, что в соответствии с <a href="http://www.consultant.ru/document/cons_doc_LAW_61801/" target="_blank" class="legal-link"><strong>Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных»</strong></a> (актуальная редакция с изменениями от 24.06.2025) и <a href="https://digital.gov.ru/ru/documents/982/" target="_blank" class="legal-link"><strong>Приказом Минцифры России № 982 от 28.10.2025</strong></a>, наша организация официально заявляет:</p>
+                <ul>
+                    <li>Мы <strong>НЕ ИМЕЕМ</strong> и <strong>НИКОГДА НЕ ИМЕЛИ</strong> никаких аккаунтов, групп, каналов или ботов в мессенджере MAX.</li>
+                    <li>Любые обнаруженные в MAX профили, использующие название/символику нашей организации, являются <strong>ФЕЙКОВЫМИ</strong> и действуют без нашего согласия.</li>
+                    <li>Верификация каналов в MAX нами <strong>НЕ ПРОВОДИЛАСЬ</strong> и не планируется.</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h4><i class="fas fa-file-contract"></i> 2. Отказ от ответственности</h4>
+                <p>В соответствии со <a href="http://www.consultant.ru/document/cons_doc_LAW_64629/" target="_blank" class="legal-link"><strong>ст. 1253.1 Гражданского кодекса РФ</strong></a> (часть четвертая, ред. от 23.07.2025), регулирующей ответственность информационных посредников:</p>
+                <ul>
+                    <li>Мы <strong>НЕ НЕСЕМ ОТВЕТСТВЕННОСТИ</strong> за действия третьих лиц, создающих фейковые аккаунты от нашего имени в MAX.</li>
+                    <li>Вся ответственность за мошеннические действия, совершенные через фейковые каналы в MAX, возлагается на злоумышленников в соответствии с <a href="http://www.consultant.ru/document/cons_doc_LAW_10699/" target="_blank" class="legal-link"><strong>Уголовным кодексом РФ (ст. 159 УК РФ «Мошенничество»)</strong></a>.</li>
+                    <li>Мы не компенсируем ущерб, причиненный в результате взаимодействия с неофициальными ресурсами.</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h4><i class="fas fa-check-double"></i> 3. Подлинные (верифицированные) каналы</h4>
+                <p>Единственными легитимными площадками, прошедшими верификацию в соответствии с законодательством РФ, являются:</p>
+                <ul>
+                    <li><strong>Telegram:</strong> @VisualVertex (каналы), @VisualVertexbot (бот поддержки), @HeadSupportbot (бот для связи)</li>
+                    <li><strong>ВКонтакте:</strong> <a href="https://vk.com/visualvertex" target="_blank" class="legal-link">https://vk.com/visualvertex</a> (верифицированное сообщество)</li>
+                    <li><strong>Discord:</strong> <a href="https://discord.gg/QkNVfxvq" target="_blank" class="legal-link">https://discord.gg/QkNVfxvq</a> (официальный сервер)</li>
+                    <li><strong>Официальные сайты:</strong> <a href="https://1visualvertexrp.netlify.app" target="_blank" class="legal-link">1visualvertexrp.netlify.app</a>, <a href="https://website-dragoncorp0.netlify.app" target="_blank" class="legal-link">website-dragoncorp0.netlify.app</a></li>
+                </ul>
+                <p><span class="legal-badge"><i class="fas fa-certificate"></i> Верифицировано в 2026 г.</span></p>
+            </div>
+
+            <div class="legal-section">
+                <h4><i class="fas fa-gavel"></i> 4. Правовые основания и ответственность</h4>
+                <p>Данное заявление составлено на основе действующего законодательства Российской Федерации (по состоянию на <strong>февраль 2026 года</strong>):</p>
+                <ul>
+                    <li><a href="http://www.consultant.ru/document/cons_doc_LAW_61801/" target="_blank" class="legal-link"><strong>ФЗ-152 «О персональных данных»</strong></a> (ред. от 24.06.2025) — защита личной информации</li>
+                    <li><a href="http://publication.pravo.gov.ru/document/0001202508070018" target="_blank" class="legal-link"><strong>Постановление Правительства РФ № 1183 от 07.08.2025</strong></a> — регулирование цифровых платформ (вступает в силу с 01.03.2026)</li>
+                    <li><a href="http://www.consultant.ru/document/cons_doc_LAW_64629/" target="_blank" class="legal-link"><strong>ГК РФ (часть четвертая)</strong></a> — защита интеллектуальной собственности</li>
+                    <li><a href="http://www.consultant.ru/document/cons_doc_LAW_10699/" target="_blank" class="legal-link"><strong>УК РФ, ст. 159</strong></a> — уголовная ответственность за мошенничество (до 10 лет лишения свободы)</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h4><i class="fas fa-exclamation-triangle" style="color: #ff7e5f;"></i> 5. Предупреждение о мошенничестве</h4>
+                <p>Согласно <a href="https://epp.genproc.gov.ru/web/gprf/search?article=126582432" target="_blank" class="legal-link"><strong>разъяснениям Генеральной прокуратуры РФ (октябрь 2025)</strong></a>:</p>
+                <ul>
+                    <li>Создание фейковых аккаунтов с целью хищения данных квалифицируется как мошенничество.</li>
+                    <li>Если вам предлагают в MAX "официальные" услуги от нашего имени — это 100% мошенники.</li>
+                    <li>Не переводите деньги, не передавайте личные данные, не переходите по ссылкам.</li>
+                </ul>
+            </div>
+
+            <div class="legal-footer-note">
+                <i class="fas fa-clock"></i> Настоящая политика действует с 01.01.2026 и актуальна на 22.02.2026.<br>
+                *Все ссылки на нормативные акты приведены в актуальных редакциях 2025-2027 гг. и ведут на официальные правовые порталы.
+            </div>
+        </div>
+    </div>
+
+    <!-- МОДАЛЬНОЕ ОКНО: Связаться с правообладателем -->
+    <div id="copyrightModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-copyright" style="margin-right: 8px;"></i> Связаться с правообладателем</h3>
+                <span class="close-modal" id="closeCopyrightModal">&times;</span>
+            </div>
+            
+            <div class="legal-section">
+                <h4><i class="fas fa-phone-alt"></i> Контакты для правообладателей</h4>
+                <p>По вопросам нарушения авторских прав, использования товарных знаков и логотипов, а также для официальных запросов:</p>
+                <ul style="list-style: none; margin-left: 0;">
+                    <li style="margin-bottom: 15px;"><i class="fas fa-envelope" style="color: #ffb347; margin-right: 10px;"></i> <strong>Email:</strong> <a href="mailto:drakon.karol@yandex.ru" class="legal-link">drakon.karol@yandex.ru</a></li>
+                    <li style="margin-bottom: 15px;"><i class="fab fa-telegram" style="color: #ffb347; margin-right: 10px;"></i> <strong>Telegram:</strong> <a href="https://t.me/HeadSupportbot" target="_blank" class="legal-link">@HeadSupportbot</a> (команда /start)</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h4><i class="fas fa-clock"></i> Часы работы</h4>
+                <div class="schedule-table">
+                    <div class="schedule-row"><span class="schedule-day">Понедельник</span><span class="schedule-time">10:00 - 14:20</span></div>
+                    <div class="schedule-row"><span class="schedule-day">Вторник</span><span class="schedule-time">10:00 - 17:00</span></div>
+                    <div class="schedule-row"><span class="schedule-day">Среда</span><span class="schedule-time">10:00 - 17:00</span></div>
+                    <div class="schedule-row"><span class="schedule-day">Четверг</span><span class="schedule-time">10:00 - 00:30 (след. дня)</span></div>
+                    <div class="schedule-row"><span class="schedule-day">Пятница</span><span class="schedule-time">10:00 - 00:30 (след. дня)</span></div>
+                    <div class="schedule-row"><span class="schedule-day">Суббота</span><span class="schedule-time schedule-closed">закрыто</span></div>
+                    <div class="schedule-row"><span class="schedule-day">Воскресенье</span><span class="schedule-time schedule-closed">закрыто</span></div>
+                </div>
+            </div>
+
+            <div class="legal-section">
+                <h4><i class="fas fa-file-signature"></i> Форма обращения</h4>
+                <p>Для ускорения обработки запроса в письме укажите:</p>
+                <ul>
+                    <li>Ваши контактные данные</li>
+                    <li>Суть нарушения (со ссылками на фейковые ресурсы)</li>
+                    <li>Скриншоты или доказательства</li>
+                    <li>Ваши предложения/требования</li>
+                </ul>
+                <p style="margin-top: 1rem; background: #1d2a38; padding: 1rem; border-radius: 16px;">
+                    <i class="fas fa-shield-alt" style="color: #4bb543;"></i> Все обращения конфиденциальны и обрабатываются в соответствии с законодательством РФ.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- НОВОЕ МОДАЛЬНОЕ ОКНО: ПРАВОВАЯ ОСНОВА -->
+    <div id="legalRightsModal" class="legal-modal">
+        <div class="legal-modal-content">
+            <div class="legal-modal-header">
+                <h3><i class="fas fa-balance-scale"></i> Правовая позиция · РФ</h3>
+                <span class="close-legal-modal" id="closeLegalModalBtn">&times;</span>
+            </div>
+            <div class="legal-doc-section">
+                <h4><i class="fas fa-file-alt"></i> Лицензионное разъяснение (ст. 152-ФЗ)</h4>
+                <p>В соответствии с <strong>Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных»</strong> (ред. от 24.06.2025) и <strong>Постановлением Правительства РФ № 1183 от 07.08.2025</strong>, наша организация <strong>не создаёт и не верифицирует</strong> аккаунты в мессенджере MAX.</p>
+                <div class="law-link-grid">
+                    <a href="http://www.consultant.ru/document/cons_doc_LAW_61801/" target="_blank" class="law-link-card"><i class="fas fa-link"></i> 152-ФЗ (КонсультантПлюс)</a>
+                </div>
+            </div>
+            <div class="legal-doc-section">
+                <h4><i class="fas fa-flag-checkered"></i> Конституция РФ — право на отказ</h4>
+                <p>Статья 23 Конституции РФ гарантирует право на неприкосновенность частной жизни. Отсутствие в MAX — осознанная правовая позиция.</p>
+                <div class="law-link-grid">
+                    <a href="http://www.consultant.ru/document/cons_doc_LAW_28399/" target="_blank" class="law-link-card"><i class="fas fa-scroll"></i> Конституция РФ (ст.23)</a>
+                </div>
+            </div>
+            <div class="legal-doc-section">
+                <h4><i class="fas fa-police-badge"></i> Официальная позиция МВД РФ</h4>
+                <p>Создание фейковых аккаунтов от имени юрлиц влечёт уголовную ответственность по ст. 159 УК РФ.</p>
+                <div class="law-link-grid">
+                    <a href="https://мвд.рф/" target="_blank" class="law-link-card"><i class="fas fa-gavel"></i> МВД РФ</a>
+                    <a href="https://rkn.gov.ru/" target="_blank" class="law-link-card"><i class="fas fa-chart-line"></i> Роскомнадзор</a>
+                </div>
+            </div>
+            <div class="legal-note">
+                <i class="fas fa-check-circle"></i> Данное правовое обоснование подтверждает, что наша организация <strong>НЕ присутствует в MAX</strong>.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const moreModal = document.getElementById('moreModal');
+        const moreBtn = document.getElementById('moreButton');
+        const closeMoreModal = document.getElementById('closeMoreModal');
+        if (moreBtn) moreBtn.onclick = () => moreModal.style.display = 'flex';
+        if (closeMoreModal) closeMoreModal.onclick = () => moreModal.style.display = 'none';
+
+        const policyModal = document.getElementById('policyModal');
+        const policyBtn = document.getElementById('policyButton');
+        const closePolicyModal = document.getElementById('closePolicyModal');
+        if (policyBtn) policyBtn.onclick = () => policyModal.style.display = 'flex';
+        if (closePolicyModal) closePolicyModal.onclick = () => policyModal.style.display = 'none';
+
+        const copyrightModal = document.getElementById('copyrightModal');
+        const copyrightBtn = document.getElementById('copyrightButton');
+        const closeCopyrightModal = document.getElementById('closeCopyrightModal');
+        if (copyrightBtn) copyrightBtn.onclick = () => copyrightModal.style.display = 'flex';
+        if (closeCopyrightModal) closeCopyrightModal.onclick = () => copyrightModal.style.display = 'none';
+
+        const legalFloatBtn = document.getElementById('legalFloatBtn');
+        const legalRightsModal = document.getElementById('legalRightsModal');
+        const closeLegalModal = document.getElementById('closeLegalModalBtn');
+        if (legalFloatBtn) legalFloatBtn.onclick = (e) => { e.preventDefault(); legalRightsModal.style.display = 'flex'; };
+        if (closeLegalModal) closeLegalModal.onclick = () => legalRightsModal.style.display = 'none';
+
+        window.onclick = function(event) {
+            if (event.target == moreModal) moreModal.style.display = 'none';
+            if (event.target == policyModal) policyModal.style.display = 'none';
+            if (event.target == copyrightModal) copyrightModal.style.display = 'none';
+            if (event.target == legalRightsModal) legalRightsModal.style.display = 'none';
+        }
+
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            if (question) {
+                question.addEventListener('click', () => {
+                    faqItems.forEach(otherItem => { if (otherItem !== item && otherItem.classList.contains('active')) otherItem.classList.remove('active'); });
+                    item.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+    <div style="display: flex; justify-content: space-between; color: #5e748b; font-size: 0.8rem; padding-top: 0.2rem;">
+        <span>Оптимизировано под все экраны - «улучшение-добовление» Версия ⎔ v3.0</span>
+    </div>
+</body>
+</html>
