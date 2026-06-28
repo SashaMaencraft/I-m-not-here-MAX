@@ -42,8 +42,8 @@
 
 ## Автор
 
-**Visual Vertex / DragonCorp**  
-- Telegram: [@VisualVertex](https://t.me/VisualVertex)  
+**MP: Life / DragonCorp**  
+- Telegram: [@LiveOnMP_SupportBot](https://t.me/LiveOnMP_SupportBot)  
 - Почта: `drakon.karol@yandex.ru`  
 - Бот для связи: [@HeadSupportbot](https://t.me/HeadSupportbot)
 
@@ -65,4 +65,4 @@
 ---
 
 *Если вы увидели копию этого сайта — сообщите по контактам выше.*  
-© 2026 Visual Vertex / DragonCorp. Все права защищены.
+© 2026 MP: Life / DragonCorp. Все права защищены.
