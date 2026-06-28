@@ -43,7 +43,7 @@
 ## Автор
 
 **MP: Life / DragonCorp**  
-- Telegram: [@LiveOnMP_SupportBot](https://t.me/LiveOnMP_SupportBot)  
+- Telegram: [@LiveOnMP](https://t.me/LiveOnMP)  
 - Почта: `drakon.karol@yandex.ru`  
 - Бот для связи: [@HeadSupportbot](https://t.me/HeadSupportbot)
 
